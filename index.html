@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Museum</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" id="menuCheckbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <!-- 
+            We can use a label here to close upon click (when doing same page navigation), this
+            does require a slight bit of JS.
+            -->
+            <li>
+              <a href="#">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+              </a>
+            </li>
+            
+            <!-- These just close the menu -->
+            <li><label for="menuCheckbox"><a>Info</a></label></li>
+            <li><label for="menuCheckbox"><a>Contact</a></label></li>
+            
+            <!-- Or just use regular URLs -->
+            <li>
+              <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <header class="header">
+        <h1 class="headertitle">Fortnite Musea</h1>
+        <button class="headerbutton">Menu</button>
+
+    </header>
+<body>
+
+
+
+    <main>
+    <figure class="bigfigure">
+        <img src="blade-2560x1440-2560x1440-d4e556fb8166.jpg" alt="Fortnite">
+    </figure>
+    <section class="collect">
+    <h2 class="	collecttitle">Collections</h2>
+        <ul class="collectlist">
+            <li class="collectlistitem"></li>
+            <li class="collectlistitem"></li>
+            <li class="collectlistitem"></li>
+            <li class="collectlistitem"></li>
+            <li class="collectlistitem"></li>
+            <li class="collectlistitem"></li>
+        </ul>   
+        <section class="Info">
+                <section class="WHY">   
+                    <h2>WHY</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod dapibus urna, in pulvinar nisl faucibus non. Nunc at tristique tortor. Cras facilisis mauris velit, ac pharetra mauris blandit non. Vivamus nisi metus, porta nec feugiat sollicitudin, rutrum mattis metus. Sed eu rutrum elit. Fusce scelerisque ipsum id bibendum elementum. Nam lacinia massa nec nisl vulputate pulvinar. Aliquam volutpat auctor fringilla. Ut dui nibh, eleifend in nibh sed, posuere mattis ipsum. Praesent eleifend, justo at porttitor auctor, nisi tellus mollis nulla, ultricies sollicitudin risus nisl eget dui. Sed pharetra risus sit amet nisi bibendum dapibus eget at urna. Pellentesque vel turpis et urna sagittis commodo et at risus. Suspendisse ac ultrices massa. Integer accumsan placerat faucibus. Nam arcu orci, aliquam ut libero sed, hendrerit dignissim mi. Ut lobortis, metus et feugiat feugiat, massa quam aliquet eros, vitae auctor lectus tortor sit amet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat interdum enim, vel ullamcorper tellus suscipit vel. Nunc egestas nibh et neque sagittis, nec tempus nunc laoreet. Morbi euismod id orci vitae blandit. Duis rhoncus mauris quis massa fermen</h3>
+                </section>
+                
+                <section class="WHAT">   
+                    <h2>WHAT</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod dapibus urna, in pulvinar nisl faucibus non. Nunc at tristique tortor. Cras facilisis mauris velit, ac pharetra mauris blandit non. Vivamus nisi metus, porta nec feugiat sollicitudin, rutrum mattis metus. Sed eu rutrum elit. Fusce scelerisque ipsum id bibendum elementum. Nam lacinia massa nec nisl vulputate pulvinar. Aliquam volutpat auctor fringilla. Ut dui nibh, eleifend in nibh sed, posuere mattis ipsum. Praesent eleifend, justo at porttitor auctor, nisi tellus mollis nulla, ultricies sollicitudin risus nisl eget dui. Sed pharetra risus sit amet nisi bibendum dapibus eget at urna. Pellentesque vel turpis et urna sagittis commodo et at risus. Suspendisse ac ultrices massa. Integer accumsan placerat faucibus. Nam arcu orci, aliquam ut libero sed, hendrerit dignissim mi. Ut lobortis, metus et feugiat feugiat, massa quam aliquet eros, vitae auctor lectus tortor sit amet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat interdum enim, vel ullamcorper tellus suscipit vel. Nunc egestas nibh et neque sagittis, nec tempus nunc laoreet. Morbi euismod id orci vitae blandit. Duis rhoncus mauris quis massa fermen</h3>
+                    
+                </section>
+
+                <section class="Form">
+                  <form >
+                    <div>
+                      <label for="">Naam</label>
+                      <input type="text">
+                  </div>
+                  <div>
+                      <label for="">Email</label>
+                      <input type="email">
+                  </div>
+                  <div>
+                      <label for="">Vraag of opmerking</label>
+                      <textarea class="BigText" id=""></textarea>
+                  </div>
+                  <div>
+                      <button>
+                          Stuur
+                      </button>
+                  </form>
+                </section>
+                
+        </section>
+      
+    </section>
+    </main>
+
+</body>
